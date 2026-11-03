@@ -8,7 +8,7 @@ env:
   REGISTRY: 362099375729.dkr.ecr.eu-central-1.amazonaws.com
   IMAGE_NAME: robi/csk-app
 
-jobs: 
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:0.1.0
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:0.1.1
